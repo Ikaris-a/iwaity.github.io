@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: IP | Iwaity</title>
+  <title>Hexo常用指令(一) | Iwaity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I&apos;m 琥珀,一个95善于追梦的双子座。前端工程师,lua爱好者,全栈开发尝试者。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iwaity">
-<meta property="og:url" content="www.iwaity.com/tags/IP/index.html">
+  <meta name="description" content="Hexo 常用指令指南">
+<meta name="keywords" content="Hexo, 指令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo常用指令(一)">
+<meta property="og:url" content="www.iwaity.com/2017/09/27/hexoInstruction/index.html">
 <meta property="og:site_name" content="Iwaity">
-<meta property="og:description" content="I&apos;m 琥珀,一个95善于追梦的双子座。前端工程师,lua爱好者,全栈开发尝试者。">
+<meta property="og:description" content="Hexo 常用指令指南">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-27T07:43:42.806Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iwaity">
-<meta name="twitter:description" content="I&apos;m 琥珀,一个95善于追梦的双子座。前端工程师,lua爱好者,全栈开发尝试者。">
+<meta name="twitter:title" content="Hexo常用指令(一)">
+<meta name="twitter:description" content="Hexo 常用指令指南">
   
     <link rel="alternative" href="/atom.xml" title="Iwaity" type="application/atom+xml">
   
@@ -40,9 +42,9 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
-          isTag: true,
+          isTag: false,
           isCategory: false,
           open_in_new: false
       }
@@ -216,58 +218,201 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-hexoInstruction" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/08/30/Http01/" class="archive-article-date">
-      <time datetime="2017-08-30T09:59:55.672Z" itemprop="datePublished">08-30</time>
+    <div class="article-meta">
+      <a href="/2017/09/27/hexoInstruction/" class="article-date">
+      <time datetime="2017-09-27T07:43:42.792Z" itemprop="datePublished">2017-09-27</time>
 </a>
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/30/Http01/">Http(一)</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo常用指令(一)
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/HTTP/">HTTP</a>
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTTP/">HTTP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IP/">IP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TCP/">TCP</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/指令/">指令</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/部署/">部署</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="Hexo常用的指令"><a href="#Hexo常用的指令" class="headerlink" title="Hexo常用的指令"></a>Hexo常用的指令</h2><p>看看由Hexo和Node驱动的站点平日里需要的指令吧</p>
+<h6 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h6><pre><code>
+hexo n "blog" == hexo new "blog" #new article
+hexo p == hexo publish
+hexo g == hexo generate#生成静态页面至public目录
+hexo s == hexo server #启动本地服务预览（默认端口4000，'ctrl + c'关闭server）
+hexo d == hexo deploy#部署上线
+</code></pre>
+###### 服务
+<pre><code>
+hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。
+hexo server -s #静态模式
+hexo server -p 5000 #更改端口
+hexo server -i 192.168.1.1 #自定义 IP
+
+
+</code></pre>
+###### 监听文件变化
+<pre><code>
+hexo generate #使用 Hexo 生成静态文件快速而且简单
+hexo generate --watch #监视文件变动
+</code></pre>
+
+<h6 id="推送到服务器上"><a href="#推送到服务器上" class="headerlink" title="推送到服务器上"></a>推送到服务器上</h6><pre><code>
+hexo clean #清除缓存 网页正常情况下可以忽略此条命令
+hexo g #生成静态网页
+hexo d #开始部署
+</code></pre>
+      
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/09/27/hexoInstruction/">Hexo常用指令(一)</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 琥珀 的个人博客">琥珀</a></p>
+        <p><span>发布时间:</span>2017年09月27日 - 15时43分</p>
+        <p><span>最后更新:</span>2017年09月27日 - 15时43分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/09/27/hexoInstruction/" title="Hexo常用指令(一)">www.iwaity.com/2017/09/27/hexoInstruction/</a>
+            <span class="copy-path" data-clipboard-text="原文: www.iwaity.com/2017/09/27/hexoInstruction/　　作者: 琥珀" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/30/Http01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Http(一)</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo常用的指令"><span class="toc-number">1.</span> <span class="toc-text">Hexo常用的指令</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#常用"><span class="toc-number">1.0.0.0.1.</span> <span class="toc-text">常用</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#推送到服务器上"><span class="toc-number">1.0.0.0.2.</span> <span class="toc-text">推送到服务器上</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
 
     
 
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/08/30/Http01/" title="下一篇: Http(一)">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/27/hexoInstruction/">Hexo常用指令(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/30/Http01/">Http(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/30/Iwaity/">追梦人-琥珀</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -335,17 +480,6 @@ ga('send', 'pageview');
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
