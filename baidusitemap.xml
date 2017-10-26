@@ -4,32 +4,12 @@
 
     
   <url>
-    <loc>www.iwaity.com/2017/10/26/SoreceTree/</loc>
-    <lastmod>2017-10-26T06:27:42.506Z</lastmod>
-    <data>
-        <display>
-        <title>新版Source Tree无法注册</title>
-        <pubTime>2017-10-26T06:27:42.505Z</pubTime>
-        
-        <tag>source tree</tag>
-         
-         
-           
-             
-              <breadCrumb title="source tree" url="www.iwaity.com/categories/source-tree/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>www.iwaity.com/2017/10/25/Http01/</loc>
-    <lastmod>2017-10-25T07:18:48.139Z</lastmod>
+    <loc>www.iwaity.com/2017/10/26/Http01/</loc>
+    <lastmod>2017-10-26T06:53:56.080Z</lastmod>
     <data>
         <display>
         <title>Http(一)</title>
-        <pubTime>2017-10-25T07:18:48.137Z</pubTime>
+        <pubTime>2017-10-26T06:53:56.078Z</pubTime>
         
         <tag>HTTP</tag>
          
@@ -41,6 +21,26 @@
            
              
               <breadCrumb title="HTTP" url="www.iwaity.com/categories/HTTP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>www.iwaity.com/2017/10/26/SoreceTree/</loc>
+    <lastmod>2017-10-26T06:53:56.063Z</lastmod>
+    <data>
+        <display>
+        <title>新版Source Tree无法注册</title>
+        <pubTime>2017-10-26T06:53:56.061Z</pubTime>
+        
+        <tag>source tree</tag>
+         
+         
+           
+             
+              <breadCrumb title="source tree" url="www.iwaity.com/categories/source-tree/"/>
           
         </display>
     </data>
