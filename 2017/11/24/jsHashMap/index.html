@@ -21,12 +21,12 @@
 <meta property="og:site_name" content="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人">
 <meta property="og:description" content="日常开发中避免不了遇到使用HashMap的数据类型,基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键.比如:Emoji表情功能">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.iwaity.com/jsHaspMap/1.jpg">
-<meta property="og:updated_time" content="2017-11-27T03:08:21.643Z">
+<meta property="og:image" content="http://img.iwaity.com/jsHashpMap/1.jpg">
+<meta property="og:updated_time" content="2017-11-27T06:08:01.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Js中的HashMap">
 <meta name="twitter:description" content="日常开发中避免不了遇到使用HashMap的数据类型,基于哈希表的 Map 接口的实现。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键.比如:Emoji表情功能">
-<meta name="twitter:image" content="http://img.iwaity.com/jsHaspMap/1.jpg">
+<meta name="twitter:image" content="http://img.iwaity.com/jsHashpMap/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人" type="application/atom+xml">
   
@@ -288,7 +288,7 @@
 <p>我最开始的想法是利用split分割成数组,然后用replace替换相对应的图片,后来发现这种方案表情发多了会出现问题,无法替换.<br><em>而且需要指定数组下标的index位置</em><br>后来我改成以下方法:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> hashMap = <span class="keyword">new</span> HashMap();</div><div class="line"><span class="comment">//先向hashMap中存入元素</span></div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> emojMap)&#123;</div><div class="line">    hashMap.put(emojMap[i] ,(<span class="built_in">parseInt</span>(i))+<span class="string">'.png'</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> r = <span class="regexp">/([^\[\]]+)(?=\])/g</span>;</div><div class="line"><span class="keyword">var</span> str = <span class="string">"[笑脸][喜欢]emoji表情"</span>;</div><div class="line"><span class="keyword">var</span> txt,url,tpl;</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> str.match(r)) &#123;</div><div class="line">    <span class="comment">//获取hashMap中对应的Value</span></div><div class="line">    txt = hashMap.get(str.match(r)[i])</div><div class="line">    tpl = <span class="string">"&lt;img src='"</span> + i + <span class="string">".png' &gt;"</span>;</div><div class="line">    str = str.split(m[i]).join(tpl);</div><div class="line">&#125;</div><div class="line">str=str.replace(<span class="regexp">/\[|]/g</span>,<span class="string">''</span>);</div><div class="line"><span class="built_in">console</span>.log(str);</div></pre></td></tr></table></figure>
 <p>使用HashMap的好处就是不用担心key的位置了,因为每个key都对应一个val。</p>
-<p><img src="http://img.iwaity.com/jsHaspMap/1.jpg" alt="jsHaspMap" title="jsHaspMap"></p>
+<p><img src="http://img.iwaity.com/jsHashpMap/1.jpg" alt="jsHashpMap" title="jsHashpMap"></p>
 <p>这样就可以完美替换成Emoji图片展示了。</p>
 
       
@@ -302,7 +302,7 @@
         <p><span>本文标题:</span><a href="/2017/11/24/jsHashMap/">Js中的HashMap</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 琥珀 的个人博客">琥珀</a></p>
         <p><span>发布时间:</span>2017年11月24日 - 00时00分</p>
-        <p><span>最后更新:</span>2017年11月27日 - 11时08分</p>
+        <p><span>最后更新:</span>2017年11月27日 - 14时08分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/11/24/jsHashMap/" title="Js中的HashMap">www.iwaity.com/2017/11/24/jsHashMap/</a>
             <span class="copy-path" data-clipboard-text="原文: www.iwaity.com/2017/11/24/jsHashMap/　　作者: 琥珀" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
