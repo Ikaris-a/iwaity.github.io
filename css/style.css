@@ -4668,7 +4668,7 @@ pre .link_url {
 ::-webkit-scrollbar-button:end:active {
   background: url("../img/scrollbar_arrow.png") no-repeat -30px -18px;
 }
-#viewer {
+#tocButton#viewer {
   position: fixed;
   z-index: 1000000;
   top: 0;
