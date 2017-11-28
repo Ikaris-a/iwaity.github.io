@@ -4,6 +4,57 @@
 
     
   <url>
+    <loc>www.iwaity.com/2017/11/28/nodeBlog03/</loc>
+    <lastmod>2017-11-28T07:04:18.229Z</lastmod>
+    <data>
+        <display>
+        <title>如何使用Node + Express + MongoDB 搭建网站(三)</title>
+        <pubTime>2017-11-27T16:00:00.000Z</pubTime>
+        
+        <tag>Node</tag>
+         
+        <tag>Express</tag>
+         
+        <tag>MongoDB</tag>
+         
+         
+           
+             
+              <breadCrumb title="Node" url="www.iwaity.com/categories/Node/"/>
+          
+             
+              <breadCrumb title="MongoDB" url="www.iwaity.com/categories/Node/MongoDB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>www.iwaity.com/2017/11/28/nodeBlog02/</loc>
+    <lastmod>2017-11-28T05:54:41.254Z</lastmod>
+    <data>
+        <display>
+        <title>如何使用Node + Express + MongoDB 搭建网站(二)</title>
+        <pubTime>2017-11-27T16:00:00.000Z</pubTime>
+        
+        <tag>Node</tag>
+         
+        <tag>Express</tag>
+         
+        <tag>MongoDB</tag>
+         
+         
+           
+             
+              <breadCrumb title="MongoDB" url="www.iwaity.com/categories/MongoDB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>www.iwaity.com/2017/11/24/jsHashMap/</loc>
     <lastmod>2017-11-27T06:10:21.723Z</lastmod>
     <data>

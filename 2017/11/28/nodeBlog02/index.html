@@ -11,23 +11,27 @@
         <img src='http://data.iwaity.com/img/pic300.jpg' />
     </div>
   
-  <title>新版Source Tree无法注册 | Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人</title>
+  <title>如何使用Node + Express + MongoDB 搭建网站(二) | Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="通过Sourcetree简单的Git GUI可视化和管理你的存储库。">
-<meta name="keywords" content="Source Tree">
+  <meta name="description" content="上节我们已经成功安装完Node和Express并且能启动服务，完成界面展示,可是一个网站不能只是静态的数据,因此我们需要数据库来存储常用数据。">
+<meta name="keywords" content="Node,Express,MongoDB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新版Source Tree无法注册">
-<meta property="og:url" content="www.iwaity.com/2017/10/26/SoreceTree/index.html">
+<meta property="og:title" content="如何使用Node + Express + MongoDB 搭建网站(二)">
+<meta property="og:url" content="www.iwaity.com/2017/11/28/nodeBlog02/index.html">
 <meta property="og:site_name" content="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人">
-<meta property="og:description" content="通过Sourcetree简单的Git GUI可视化和管理你的存储库。">
+<meta property="og:description" content="上节我们已经成功安装完Node和Express并且能启动服务，完成界面展示,可是一个网站不能只是静态的数据,因此我们需要数据库来存储常用数据。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.iwaity.com/sourcetree/1.png">
-<meta property="og:image" content="http://img.iwaity.com/sourcetree/3.png">
-<meta property="og:updated_time" content="2017-11-24T01:58:22.903Z">
+<meta property="og:image" content="http://img.iwaity.com/nodeBlog/5.png">
+<meta property="og:image" content="http://img.iwaity.com/nodeBlog/6.png">
+<meta property="og:image" content="http://img.iwaity.com/nodeBlog/7.png">
+<meta property="og:image" content="http://img.iwaity.com/nodeBlog/8.png">
+<meta property="og:image" content="http://img.iwaity.com/nodeBlog/9.png">
+<meta property="og:image" content="http://img.iwaity.com/nodeBlog/10.png">
+<meta property="og:updated_time" content="2017-11-28T05:54:41.254Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新版Source Tree无法注册">
-<meta name="twitter:description" content="通过Sourcetree简单的Git GUI可视化和管理你的存储库。">
-<meta name="twitter:image" content="http://img.iwaity.com/sourcetree/1.png">
+<meta name="twitter:title" content="如何使用Node + Express + MongoDB 搭建网站(二)">
+<meta name="twitter:description" content="上节我们已经成功安装完Node和Express并且能启动服务，完成界面展示,可是一个网站不能只是静态的数据,因此我们需要数据库来存储常用数据。">
+<meta name="twitter:image" content="http://img.iwaity.com/nodeBlog/5.png">
   
     <link rel="alternative" href="/atom.xml" title="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人" type="application/atom+xml">
   
@@ -235,11 +239,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-SoreceTree" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-nodeBlog02" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/10/26/SoreceTree/" class="article-date">
-      <time datetime="2017-10-25T16:00:00.000Z" itemprop="datePublished">2017-10-26</time>
+      <a href="/2017/11/28/nodeBlog02/" class="article-date">
+      <time datetime="2017-11-27T16:00:00.000Z" itemprop="datePublished">2017-11-28</time>
 </a>
     </div>
   
@@ -252,7 +256,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      新版Source Tree无法注册
+      如何使用Node + Express + MongoDB 搭建网站(二)
     </h1>
   
 
@@ -261,13 +265,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Source-Tree/">Source Tree</a>
+    <a class="article-category-link" href="/categories/MongoDB/">MongoDB</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Source-Tree/">Source Tree</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Express/">Express</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/">MongoDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node/">Node</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -277,10 +281,23 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="Source-Tree"><a href="#Source-Tree" class="headerlink" title="Source Tree"></a>Source Tree</h2><p>好久没用SourceTree了,今天突然想用。之前也有小伙伴问我要破解码,我当时也是一脸懵逼,我说这个不需要破解码啊,当时太忙也就没有去研究这个。</p>
-<h2 id="绕过Source-Tree账户授权"><a href="#绕过Source-Tree账户授权" class="headerlink" title="绕过Source Tree账户授权"></a>绕过Source Tree账户授权</h2><p>今天下载了最新的才知道改了好多，最新的还得要有Atlassian账号。<br><br><br>如图:<br><img src="http://img.iwaity.com/sourcetree/1.png" alt="Atlassian" title="Atlassian"><br>因为某种原因,最近那个啥又比较厉害,所以访问<a href="https://www.atlassian.com/" target="_blank" rel="external">Atlassian</a>慢.好吧我等不起了，于是找到了另一种方法。<br></p>
-<h3 id="创建accounts文件"><a href="#创建accounts文件" class="headerlink" title="创建accounts文件"></a>创建accounts文件</h3><p>首先我们需要创建一个名为<strong>accounts</strong>的json文件,然后复制以下代码到文件中<br><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">[</div><div class="line">  &#123;</div><div class="line">    <span class="attr">"$id"</span>: <span class="string">"1"</span>,</div><div class="line">    <span class="attr">"$type"</span>: <span class="string">"SourceTree.Api.Host.Identity.Model.IdentityAccount, SourceTree.Api.Host.Identity"</span>,</div><div class="line">    <span class="attr">"Authenticate"</span>: <span class="literal">true</span>,</div><div class="line">    <span class="attr">"HostInstance"</span>: &#123;</div><div class="line">      <span class="attr">"$id"</span>: <span class="string">"2"</span>,</div><div class="line">      <span class="attr">"$type"</span>: <span class="string">"SourceTree.Host.Atlassianaccount.AtlassianAccountInstance, SourceTree.Host.AtlassianAccount"</span>,</div><div class="line">      <span class="attr">"Host"</span>: &#123;</div><div class="line">        <span class="attr">"$id"</span>: <span class="string">"3"</span>,</div><div class="line">        <span class="attr">"$type"</span>: <span class="string">"SourceTree.Host.Atlassianaccount.AtlassianAccountHost, SourceTree.Host.AtlassianAccount"</span>,</div><div class="line">        <span class="attr">"Id"</span>: <span class="string">"atlassian account"</span></div><div class="line">      &#125;,</div><div class="line">      <span class="attr">"BaseUrl"</span>: <span class="string">"https://id.atlassian.com/"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"Credentials"</span>: &#123;</div><div class="line">      <span class="attr">"$id"</span>: <span class="string">"4"</span>,</div><div class="line">      <span class="attr">"$type"</span>: <span class="string">"SourceTree.Model.BasicAuthCredentials, SourceTree.Api.Account"</span>,</div><div class="line">      <span class="attr">"Username"</span>: <span class="string">""</span>,</div><div class="line">      <span class="attr">"Email"</span>: <span class="literal">null</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">"IsDefault"</span>: <span class="literal">false</span></div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure></p>
-<p>最后将文件复制到你的SourceTree安装的位置,找到 <strong>AppData\Local\Atlassian\SourceTree</strong> 文件夹下面,关闭SourceTree重新运行,前几次可能会运行失败,以管理员身份运行SourceTree就可以了.最后你就可以使用啦。<br><img src="http://img.iwaity.com/sourcetree/3.png" alt="Atlassian" title="Atlassian"><br><strong>美滋滋！！！</strong></p>
+        <h2 id="安装MongoDB"><a href="#安装MongoDB" class="headerlink" title="安装MongoDB"></a>安装MongoDB</h2><p>上节我们已经成功安装完Node和Express并且能启动服务，完成界面展示,可是一个网站不能只是静态的数据,因此我们需要数据库来存储常用数据。<br>MongoDB官网根据自己系统下载<a href="https://www.mongodb.com/download-center?jmp=nav" target="_blank" rel="external">安装MongoDB</a></p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>数据库安装成功后,还需要我们去配置环境变量,配置系统变量，增加变量值就是你安装MongoDB的bin目录 <br><br>如图:<br><img src="http://img.iwaity.com/nodeBlog/5.png" alt="MongoDB" title="MongoDB"> </p>
+<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><p>接下来启动MongDB服务 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mongod</div></pre></td></tr></table></figure>
+<p><br><br>如图:<br><img src="http://img.iwaity.com/nodeBlog/6.png" alt="MongoDBServer" title="MongoDBServer"><br>这样 MongoDB就启动完成了。</p>
+<h2 id="连接MongoDB"><a href="#连接MongoDB" class="headerlink" title="连接MongoDB"></a>连接MongoDB</h2><p>如果使用命令不熟悉或者嫌麻烦的同学可以用MongoDB的可视化工具<br><a href="https://robomongo.org/download" target="_blank" rel="external">安装Robomongo</a><br>进入下载页面下载第二项免安装版本 解压就可以用了！<br><img src="http://img.iwaity.com/nodeBlog/7.png" alt="Robomongo" title="Robomongo"><br>解压后链接数据库,可能会出现这种情况</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Cannot connect to the MongoDB at localhost:27017.</div><div class="line"></div><div class="line">Error:</div><div class="line">Network is unreachable.</div></pre></td></tr></table></figure>
+<p>我们需要在你的任意磁盘创建一个db文件夹<br>然后使用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mongod --dbpath=d:\db</div></pre></td></tr></table></figure>
+<p>然后浏览器输入<a href="http://localhost:27017" target="_blank" rel="external">http://localhost:27017</a><br>如果出现It looks like you are trying to access MongoDB over HTTP on the native driver port.<br>再回头看下dos下有没有增加connection如下</p>
+<p><img src="http://img.iwaity.com/nodeBlog/8.png" alt="RobomongoError" title="RobomongoError"></p>
+<p>另外开一个dos命令进入安装MongoDB的bin启动MongoDB</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mongod</div></pre></td></tr></table></figure>
+<p><img src="http://img.iwaity.com/nodeBlog/9.png" alt="RunMongoDB" title="RunMongoDB"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">D:\mongo\bin&gt;mongo</div><div class="line">MongoDB shell version v3.4.10</div><div class="line">connecting to: mongodb://127.0.0.1:27017</div><div class="line">MongoDB server version: 3.4.10</div><div class="line">Server has startup warnings:</div><div class="line">2017-11-27T20:09:01.475-0700 I CONTROL  [initandlisten]</div><div class="line">2017-11-27T20:09:01.476-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.</div><div class="line">2017-11-27T20:09:01.480-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.</div><div class="line">2017-11-27T20:09:01.490-0700 I CONTROL  [initandlisten]</div></pre></td></tr></table></figure>
+<p>这样就表示你的数据库可以用啦。<br>使用命令查看当前数据库名称,使用数据库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">db</div><div class="line">use 你的数据库名称</div></pre></td></tr></table></figure></p>
+<p>接下来插入数据看是否成功<br><img src="http://img.iwaity.com/nodeBlog/10.png" alt="insertData" title="insertData"><br>好的,可以用了。</p>
 
       
       
@@ -290,13 +307,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/10/26/SoreceTree/">新版Source Tree无法注册</a></p>
+        <p><span>本文标题:</span><a href="/2017/11/28/nodeBlog02/">如何使用Node + Express + MongoDB 搭建网站(二)</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 琥珀 的个人博客">琥珀</a></p>
-        <p><span>发布时间:</span>2017年10月26日 - 00时00分</p>
-        <p><span>最后更新:</span>2017年11月24日 - 09时58分</p>
+        <p><span>发布时间:</span>2017年11月28日 - 00时00分</p>
+        <p><span>最后更新:</span>2017年11月28日 - 13时54分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/10/26/SoreceTree/" title="新版Source Tree无法注册">www.iwaity.com/2017/10/26/SoreceTree/</a>
-            <span class="copy-path" data-clipboard-text="原文: www.iwaity.com/2017/10/26/SoreceTree/　　作者: 琥珀" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/11/28/nodeBlog02/" title="如何使用Node + Express + MongoDB 搭建网站(二)">www.iwaity.com/2017/11/28/nodeBlog02/</a>
+            <span class="copy-path" data-clipboard-text="原文: www.iwaity.com/2017/11/28/nodeBlog02/　　作者: 琥珀" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -309,18 +326,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/11/08/nodeBlog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><i class="fa fa-angle-left"></i></strong>
-      <div class="article-nav-title">
-        
-          如何使用Node + Express + MongoDB 搭建网站(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/10/25/Http01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Http(一)</div>
+    <a href="/2017/11/28/nodeBlog03/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何使用Node + Express + MongoDB 搭建网站(三)</div>
       <strong class="article-nav-caption"><i class="fa fa-angle-right"></i></strong>
     </a>
   
@@ -331,7 +339,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Source-Tree"><span class="toc-number">1.</span> <span class="toc-text">Source Tree</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绕过Source-Tree账户授权"><span class="toc-number">2.</span> <span class="toc-text">绕过Source Tree账户授权</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建accounts文件"><span class="toc-number">2.1.</span> <span class="toc-text">创建accounts文件</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装MongoDB"><span class="toc-number">1.</span> <span class="toc-text">安装MongoDB</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置环境变量"><span class="toc-number">2.</span> <span class="toc-text">配置环境变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动服务"><span class="toc-number">3.</span> <span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#连接MongoDB"><span class="toc-number">4.</span> <span class="toc-text">连接MongoDB</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -382,13 +390,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/11/08/nodeBlog/" title="上一篇: 如何使用Node + Express + MongoDB 搭建网站(一)">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/10/25/Http01/" title="下一篇: Http(一)">
+            <a href="/2017/11/28/nodeBlog03/" title="下一篇: 如何使用Node + Express + MongoDB 搭建网站(三)">
                 <i class="fa fa-angle-right"></i>
             </a>
         
