@@ -522,6 +522,7 @@ a {
     font-size: 14px;
     text-align: center;
     color: #fff;
+    -webkit-appearance: none;
   }
   #container .toc-article {
     display: none;
