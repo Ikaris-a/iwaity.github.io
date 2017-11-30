@@ -522,12 +522,6 @@ a {
     font-size: 14px;
     text-align: center;
     color: #fff;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    -o-appearance: none !important;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    appearance: none !important;
   }
   #container .toc-article {
     display: none;
@@ -4668,7 +4662,7 @@ pre .link_url {
 ::-webkit-scrollbar-button:end:active {
   background: url("../img/scrollbar_arrow.png") no-repeat -30px -18px;
 }
-#tocButton#viewer {
+#viewer {
   position: fixed;
   z-index: 1000000;
   top: 0;
