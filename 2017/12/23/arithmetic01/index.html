@@ -11,18 +11,22 @@
         <img src='http://data.iwaity.com/img/pic300.jpg' />
     </div>
   
-  <title>Category: Node | Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人</title>
+  <title>经典排序算法(一) | Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="I&apos;m 琥珀,一个95善于追梦的双子座。前端工程师,lua爱好者,全栈开发尝试者。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人">
-<meta property="og:url" content="www.iwaity.com/categories/Node/index.html">
+  <meta name="description" content="排序(Sorting) 是计算机程序设计中的一种重要操作，它的功能是将一个数据元素（或记录）的任意序列，重新排列成一个关键字有序的序列。我们将学习经典排序算法与实现!">
+<meta name="keywords" content="JavaScript,BUB,Sort">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经典排序算法(一)">
+<meta property="og:url" content="www.iwaity.com/2017/12/23/arithmetic01/index.html">
 <meta property="og:site_name" content="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人">
-<meta property="og:description" content="I&apos;m 琥珀,一个95善于追梦的双子座。前端工程师,lua爱好者,全栈开发尝试者。">
+<meta property="og:description" content="排序(Sorting) 是计算机程序设计中的一种重要操作，它的功能是将一个数据元素（或记录）的任意序列，重新排列成一个关键字有序的序列。我们将学习经典排序算法与实现!">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.iwaity.com/sort/bub.gif">
+<meta property="og:updated_time" content="2017-12-25T08:00:58.346Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人">
-<meta name="twitter:description" content="I&apos;m 琥珀,一个95善于追梦的双子座。前端工程师,lua爱好者,全栈开发尝试者。">
+<meta name="twitter:title" content="经典排序算法(一)">
+<meta name="twitter:description" content="排序(Sorting) 是计算机程序设计中的一种重要操作，它的功能是将一个数据元素（或记录）的任意序列，重新排列成一个关键字有序的序列。我们将学习经典排序算法与实现!">
+<meta name="twitter:image" content="http://img.iwaity.com/sort/bub.gif">
   
     <link rel="alternative" href="/atom.xml" title="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人" type="application/atom+xml">
   
@@ -50,10 +54,10 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
-          isCategory: true,
+          isCategory: false,
           open_in_new: false
       }
   </script>
@@ -230,93 +234,196 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-arithmetic01" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/11/30/nodeBlog03/" class="archive-article-date">
-      <time datetime="2017-11-29T16:00:00.000Z" itemprop="datePublished">11-30</time>
+    <div class="article-meta">
+      <a href="/2017/12/23/arithmetic01/" class="article-date">
+      <time datetime="2017-12-22T16:00:00.000Z" itemprop="datePublished">2017-12-23</time>
 </a>
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/30/nodeBlog03/">如何使用Node + Express + MongoDB 搭建网站(三)</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      经典排序算法(一)
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Node/">Node</a><a class="article-category-link" href="/categories/Node/MongoDB/">MongoDB</a>
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a><a class="article-category-link" href="/categories/JavaScript/BUB/">BUB</a><a class="article-category-link" href="/categories/JavaScript/BUB/Sort/">Sort</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Express/">Express</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/">MongoDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node/">Node</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BUB/">BUB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sort/">Sort</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/11/08/nodeBlog/" class="archive-article-date">
-      <time datetime="2017-11-07T16:00:00.000Z" itemprop="datePublished">11-08</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/08/nodeBlog/">如何使用Node + Express + MongoDB 搭建网站(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Node/">Node</a>
+        <h2 id="稳定的排序算法列表"><a href="#稳定的排序算法列表" class="headerlink" title="稳定的排序算法列表"></a>稳定的排序算法列表</h2><ul>
+<li>冒泡排序（bubble sort） — O(n^2）</li>
+<li>鸡尾酒排序(Cocktail sort，双向的冒泡排序) — O(n^2)</li>
+<li>插入排序（insertion sort）— O(n^2)</li>
+<li>桶排序（bucket sort）— O(n); 需要 O(k) 额外空间</li>
+<li>计数排序(counting sort) — O(n+k); 需要 O(n+k) 额外空间</li>
+<li>合并排序（merge sort）— O(nlog n); 需要 O(n) 额外空间</li>
+<li>原地合并排序— O(n^2)</li>
+<li>二叉排序树排序 （Binary tree sort） — O(nlog n)期望时间； O(n^2)最坏时间； 需要 O(n) 额外空间</li>
+<li>鸽巢排序(Pigeonhole sort) — O(n+k); 需要 O(k) 额外空间</li>
+<li>基数排序（radix sort）— O(n·k); 需要 O(n) 额外空间</li>
+<li>Gnome 排序— O(n^2)</li>
+<li>图书馆排序— O(nlog n) with high probability，需要 （1+ε)n额外空间</li>
+</ul>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p><em>冒泡排序实现原理:</em></p>
+<ol>
+<li>从列表的第一个数字到倒数第二个数字，逐个检查：若某一位上的数字大于他的下一位，则将它与它的下一位交换。</li>
+<li>重复1号步骤，直至再也不能交换。冒泡排序的平均时间复杂度与插入排序相同，也是平方级的，但冒泡排序是原地排序的，也就是说它不需要额外的存储空间。</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span>  arr = [<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">6</span>];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i++) &#123;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.length - <span class="number">1</span> - i; j++) &#123;</div><div class="line">        <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</div><div class="line">            <span class="keyword">var</span> tmp = arr[j];</div><div class="line">            arr[j] = arr[j + <span class="number">1</span>];</div><div class="line">            arr[j + <span class="number">1</span>] = tmp;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(arr)<span class="comment">//[1, 2, 3, 4, 5, 6, 7]</span></div></pre></td></tr></table></figure>
+<p><img src="http://img.iwaity.com/sort/bub.gif" alt="BUB" title="BUB"></p>
+<p>上图为冒泡排序过程,下章将会讲解鸡尾酒排序方法与实现！</p>
+
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/12/23/arithmetic01/">经典排序算法(一)</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 琥珀 的个人博客">琥珀</a></p>
+        <p><span>发布时间:</span>2017年12月23日 - 00时00分</p>
+        <p><span>最后更新:</span>2017年12月25日 - 16时00分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/12/23/arithmetic01/" title="经典排序算法(一)">www.iwaity.com/2017/12/23/arithmetic01/</a>
+            <span class="copy-path" data-clipboard-text="原文: www.iwaity.com/2017/12/23/arithmetic01/　　作者: 琥珀" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Express/">Express</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/">MongoDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Node/">Node</a></li></ul>
-    </div>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/30/nodeBlog03/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何使用Node + Express + MongoDB 搭建网站(三)</div>
+      <strong class="article-nav-caption"><i class="fa fa-angle-right"></i></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#稳定的排序算法列表"><span class="toc-number">1.</span> <span class="toc-text">稳定的排序算法列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#冒泡排序"><span class="toc-number">2.</span> <span class="toc-text">冒泡排序</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
 
     
 
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/11/30/nodeBlog03/" title="下一篇: 如何使用Node + Express + MongoDB 搭建网站(三)">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/23/arithmetic01/">经典排序算法(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/30/nodeBlog03/">如何使用Node + Express + MongoDB 搭建网站(三)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/28/nodeBlog02/">如何使用Node + Express + MongoDB 搭建网站(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/24/jsHashMap/">Js中的HashMap</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/08/nodeBlog/">如何使用Node + Express + MongoDB 搭建网站(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/26/SoreceTree/">新版Source Tree无法注册</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/25/Http01/">Http(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/22/hexoInstruction/">Hexo常用指令(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/08/30/Iwaity/">追梦人-琥珀</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
@@ -386,17 +493,6 @@ ga('send', 'pageview');
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

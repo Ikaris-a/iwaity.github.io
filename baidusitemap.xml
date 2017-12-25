@@ -4,6 +4,36 @@
 
     
   <url>
+    <loc>www.iwaity.com/2017/12/23/arithmetic01/</loc>
+    <lastmod>2017-12-25T08:00:58.346Z</lastmod>
+    <data>
+        <display>
+        <title>经典排序算法(一)</title>
+        <pubTime>2017-12-22T16:00:00.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>BUB</tag>
+         
+        <tag>Sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="www.iwaity.com/categories/JavaScript/"/>
+          
+             
+              <breadCrumb title="BUB" url="www.iwaity.com/categories/JavaScript/BUB/"/>
+          
+             
+              <breadCrumb title="Sort" url="www.iwaity.com/categories/JavaScript/BUB/Sort/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>www.iwaity.com/2017/11/30/nodeBlog03/</loc>
     <lastmod>2017-11-30T02:03:56.039Z</lastmod>
     <data>
@@ -62,9 +92,9 @@
         <title>Js中的HashMap</title>
         <pubTime>2017-11-23T16:00:00.000Z</pubTime>
         
-        <tag>HashMap</tag>
-         
         <tag>JavaScript</tag>
+         
+        <tag>HashMap</tag>
          
          
            
