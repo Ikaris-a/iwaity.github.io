@@ -13,18 +13,18 @@
   
   <title>JavaScript的this,call,apply | Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在绝大多数情况下，函数的调用方式决定了this的值。而call()和apply()可以改变this指向">
-<meta name="keywords" content="this,call,apply">
+  <meta name="description" content="在绝大多数情况下，函数的调用方式决定了this的值。而call(),apply()和bind()可以改变this指向">
+<meta name="keywords" content="this,call,apply,bind">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript的this,call,apply">
 <meta property="og:url" content="www.iwaity.com/2017/12/27/thsi-call-apply/index.html">
 <meta property="og:site_name" content="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人">
-<meta property="og:description" content="在绝大多数情况下，函数的调用方式决定了this的值。而call()和apply()可以改变this指向">
+<meta property="og:description" content="在绝大多数情况下，函数的调用方式决定了this的值。而call(),apply()和bind()可以改变this指向">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-04T03:10:33.924Z">
+<meta property="og:updated_time" content="2018-01-04T03:15:39.679Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript的this,call,apply">
-<meta name="twitter:description" content="在绝大多数情况下，函数的调用方式决定了this的值。而call()和apply()可以改变this指向">
+<meta name="twitter:description" content="在绝大多数情况下，函数的调用方式决定了this的值。而call(),apply()和bind()可以改变this指向">
   
     <link rel="alternative" href="/atom.xml" title="Iwaity-琥珀,前端工程师,全栈开发尝试者,追求编码艺术的追梦人" type="application/atom+xml">
   
@@ -158,7 +158,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/BUB/" style="font-size: 10px;">BUB</a> <a href="/tags/Express/" style="font-size: 20px;">Express</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/HashMap/" style="font-size: 10px;">HashMap</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/MongoDB/" style="font-size: 20px;">MongoDB</a> <a href="/tags/Node/" style="font-size: 20px;">Node</a> <a href="/tags/Sort/" style="font-size: 10px;">Sort</a> <a href="/tags/TCP/" style="font-size: 10px;">TCP</a> <a href="/tags/apply/" style="font-size: 10px;">apply</a> <a href="/tags/call/" style="font-size: 10px;">call</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/指令/" style="font-size: 10px;">指令</a> <a href="/tags/梦想/" style="font-size: 10px;">梦想</a> <a href="/tags/追梦人/" style="font-size: 10px;">追梦人</a> <a href="/tags/部署/" style="font-size: 10px;">部署</a>
+                        <a href="/tags/BUB/" style="font-size: 10px;">BUB</a> <a href="/tags/Express/" style="font-size: 20px;">Express</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/HashMap/" style="font-size: 10px;">HashMap</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/MongoDB/" style="font-size: 20px;">MongoDB</a> <a href="/tags/Node/" style="font-size: 20px;">Node</a> <a href="/tags/Sort/" style="font-size: 10px;">Sort</a> <a href="/tags/TCP/" style="font-size: 10px;">TCP</a> <a href="/tags/apply/" style="font-size: 10px;">apply</a> <a href="/tags/bind/" style="font-size: 10px;">bind</a> <a href="/tags/call/" style="font-size: 10px;">call</a> <a href="/tags/this/" style="font-size: 10px;">this</a> <a href="/tags/指令/" style="font-size: 10px;">指令</a> <a href="/tags/梦想/" style="font-size: 10px;">梦想</a> <a href="/tags/追梦人/" style="font-size: 10px;">追梦人</a> <a href="/tags/部署/" style="font-size: 10px;">部署</a>
                     </div>
                 </section>
                 
@@ -258,13 +258,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/this/">this</a><a class="article-category-link" href="/categories/this/call/">call</a><a class="article-category-link" href="/categories/this/call/apply/">apply</a>
+    <a class="article-category-link" href="/categories/this/">this</a><a class="article-category-link" href="/categories/this/call/">call</a><a class="article-category-link" href="/categories/this/call/apply/">apply</a><a class="article-category-link" href="/categories/this/call/apply/bind/">bind</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apply/">apply</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/call/">call</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/this/">this</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apply/">apply</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bind/">bind</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/call/">call</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/this/">this</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -275,23 +275,23 @@
       
           
         <h2 id="this的指向"><a href="#this的指向" class="headerlink" title="this的指向"></a>this的指向</h2><p>在全局执行上下文中（在任何函数体外部）this都指代全局对象。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m1</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span></div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">m1()<span class="comment">//this取决于宿主,在浏览起里面 this则指向全局对象window,则m1()===window</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m2</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line"><span class="meta">    "use strict"</span>;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span></div><div class="line"></div><div class="line">&#125;</div><div class="line">m2()<span class="comment">//严格模式下 this上下文如果没有定义 默认为 undefined,则m2()===undefined</span></div></pre></td></tr></table></figure>
-<h2 id="call-apply-bind-的作用"><a href="#call-apply-bind-的作用" class="headerlink" title="call(),apply(),bind()的作用"></a>call(),apply(),bind()的作用</h2><p>call和apply的作用就是制定this值,其实call和apply的作用完全一样,只不过接受的参数个数不一样而已</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m1</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">m1()<span class="comment">//this取决于宿主,在浏览起里面 this则指向全局对象window,则m1()===window</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">m2</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="meta">    "use strict"</span>;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span></div><div class="line">&#125;</div><div class="line">m2()<span class="comment">//严格模式下 this上下文如果没有定义 默认为 undefined,则m2()===undefined</span></div></pre></td></tr></table></figure>
+<h2 id="call-apply-bind-的作用"><a href="#call-apply-bind-的作用" class="headerlink" title="call(),apply(),bind()的作用"></a>call(),apply(),bind()的作用</h2><p>call和apply的作用就是制定this值,其实call(),apply()和bind()的作用完全一样,只不过接受的参数个数不一样而已</p>
 <ol>
 <li>call()接受若干个参数列表</li>
 </ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">m3.call(thisArg,parm1,parm2)</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">m3.call(thisArg,parm1,parm2)</div></pre></td></tr></table></figure>
 <p>call()的第一个参数就是指定this值,parm1,parm2则是指定的参数列表</p>
 <ol>
 <li>apply()接受包含若干个参数的数组或者类数组对象</li>
 </ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">m3.apply(thisArg,[arrParm1])</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">m3.apply(thisArg,[arrParm1])</div></pre></td></tr></table></figure>
 <ol>
 <li>bind()函数称为绑定函数 用于创建新函数,使用这个函数 不拘束于调用改变this值 无论你怎么调用都会有同样的this值</li>
 </ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">m3.bind(thisArg[arrParm1[arrParm2]])</div></pre></td></tr></table></figure>
-<h2 id="call-和apply-bind-的运用"><a href="#call-和apply-bind-的运用" class="headerlink" title="call()和apply(),bind()的运用"></a>call()和apply(),bind()的运用</h2><p>我们定义一个对象,在定义一个全局window,然后通过call和apply来改变this指向</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> animal = &#123;</div><div class="line"></div><div class="line">    name: <span class="string">"dog"</span></div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> name = <span class="string">"pig"</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">newAnimal</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name</div><div class="line"></div><div class="line">&#125;</div><div class="line">newAnimal() <span class="comment">//直接调用这个时候this指向window 则返回"pig"</span></div><div class="line"></div><div class="line">newAnimal.call(animal) <span class="comment">//返回dog</span></div><div class="line"></div><div class="line">newAnimal.apply(animal) <span class="comment">//返回dog</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> bindAnimal = newAnimal.bind(animal) <span class="comment">//创建新的函数,绑定this到animal</span></div><div class="line"></div><div class="line">bindAnimal() <span class="comment">//调用返回dog</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">m3.bind(thisArg[arrParm1[arrParm2]])</div></pre></td></tr></table></figure>
+<h2 id="call-和apply-bind-的运用"><a href="#call-和apply-bind-的运用" class="headerlink" title="call()和apply(),bind()的运用"></a>call()和apply(),bind()的运用</h2><p>我们定义一个对象,在定义一个全局window,然后通过call(),apply()和bind()来改变this指向</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">var</span> animal = &#123;</div><div class="line">    name: <span class="string">"dog"</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> name = <span class="string">"pig"</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">newAnimal</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name</div><div class="line">&#125;</div><div class="line">newAnimal() <span class="comment">//直接调用这个时候this指向window 则返回"pig"</span></div><div class="line"></div><div class="line">newAnimal.call(animal) <span class="comment">//返回dog</span></div><div class="line"></div><div class="line">newAnimal.apply(animal) <span class="comment">//返回dog</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> bindAnimal = newAnimal.bind(animal) <span class="comment">//创建新的函数,绑定this到animal</span></div><div class="line"></div><div class="line">bindAnimal() <span class="comment">//调用返回dog</span></div></pre></td></tr></table></figure>
 <p>call()和apply(),bind()的基本运用就是这些了,他们更多会运用在高阶函数里面</p>
 
       
@@ -305,7 +305,7 @@
         <p><span>本文标题:</span><a href="/2017/12/27/thsi-call-apply/">JavaScript的this,call,apply</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 琥珀 的个人博客">琥珀</a></p>
         <p><span>发布时间:</span>2017年12月27日 - 00时00分</p>
-        <p><span>最后更新:</span>2018年01月04日 - 11时10分</p>
+        <p><span>最后更新:</span>2018年01月04日 - 11时15分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/12/27/thsi-call-apply/" title="JavaScript的this,call,apply">www.iwaity.com/2017/12/27/thsi-call-apply/</a>
             <span class="copy-path" data-clipboard-text="原文: www.iwaity.com/2017/12/27/thsi-call-apply/　　作者: 琥珀" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>

@@ -4,6 +4,39 @@
 
     
   <url>
+    <loc>www.iwaity.com/2017/12/27/thsi-call-apply/</loc>
+    <lastmod>2018-01-04T03:15:39.679Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript的this,call,apply</title>
+        <pubTime>2017-12-26T16:00:00.000Z</pubTime>
+        
+        <tag>this</tag>
+         
+        <tag>call</tag>
+         
+        <tag>apply</tag>
+         
+        <tag>bind</tag>
+         
+         
+           
+             
+              <breadCrumb title="this" url="www.iwaity.com/categories/this/"/>
+          
+             
+              <breadCrumb title="call" url="www.iwaity.com/categories/this/call/"/>
+          
+             
+              <breadCrumb title="apply" url="www.iwaity.com/categories/this/call/apply/"/>
+          
+             
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>www.iwaity.com/2017/11/30/nodeBlog03/</loc>
     <lastmod>2018-01-04T03:11:53.853Z</lastmod>
     <data>
@@ -79,36 +112,6 @@
 
     
   <url>
-    <loc>www.iwaity.com/2017/12/27/thsi-call-apply/</loc>
-    <lastmod>2018-01-04T03:10:33.924Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript的this,call,apply</title>
-        <pubTime>2017-12-26T16:00:00.000Z</pubTime>
-        
-        <tag>this</tag>
-         
-        <tag>call</tag>
-         
-        <tag>apply</tag>
-         
-         
-           
-             
-              <breadCrumb title="this" url="www.iwaity.com/categories/this/"/>
-          
-             
-              <breadCrumb title="call" url="www.iwaity.com/categories/this/call/"/>
-          
-             
-              <breadCrumb title="apply" url="www.iwaity.com/categories/this/call/apply/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>www.iwaity.com/2017/12/23/arithmetic01/</loc>
     <lastmod>2017-12-25T08:00:58.346Z</lastmod>
     <data>
@@ -146,9 +149,9 @@
         <title>Js中的HashMap</title>
         <pubTime>2017-11-23T16:00:00.000Z</pubTime>
         
-        <tag>JavaScript</tag>
-         
         <tag>HashMap</tag>
+         
+        <tag>JavaScript</tag>
          
          
            
