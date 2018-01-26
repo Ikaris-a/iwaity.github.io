@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>www.iwaity.com/2017/10/25/Http01/</loc>
+    <lastmod>2018-01-26T06:47:49.450Z</lastmod>
+    <data>
+        <display>
+        <title>Http</title>
+        <pubTime>2017-10-24T16:00:00.000Z</pubTime>
+        
+        <tag>HTTP</tag>
+         
+        <tag>TCP</tag>
+         
+        <tag>IP</tag>
+         
+         
+           
+             
+              <breadCrumb title="HTTP" url="www.iwaity.com/categories/HTTP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>www.iwaity.com/2017/12/27/thsi-call-apply/</loc>
-    <lastmod>2018-01-04T03:22:56.074Z</lastmod>
+    <lastmod>2018-01-25T14:13:10.756Z</lastmod>
     <data>
         <display>
         <title>JavaScript的this,call,apply</title>
@@ -157,30 +181,6 @@
            
              
               <breadCrumb title="HashMap" url="www.iwaity.com/categories/HashMap/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>www.iwaity.com/2017/10/25/Http01/</loc>
-    <lastmod>2017-10-26T07:03:25.141Z</lastmod>
-    <data>
-        <display>
-        <title>Http(一)</title>
-        <pubTime>2017-10-24T16:00:00.000Z</pubTime>
-        
-        <tag>HTTP</tag>
-         
-        <tag>TCP</tag>
-         
-        <tag>IP</tag>
-         
-         
-           
-             
-              <breadCrumb title="HTTP" url="www.iwaity.com/categories/HTTP/"/>
           
         </display>
     </data>
