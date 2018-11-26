@@ -4270,21 +4270,20 @@ pre .link_url {
 .switch-btn .icon-ctn .birdhouse {
   width: 0;
   height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-style: solid;
-  border-color: transparent transparent #4d4d4d transparent;
-  border-width: 0 16px 14px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 26px solid #e02020;
+  position: relative;
 }
-.switch-btn .icon-ctn .birdhouse:after {
-  content: '';
+.switch-btn .icon-ctn .birdhouse:before {
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 26px solid #e02020;
   position: absolute;
-  top: 12px;
-  left: -12px;
-  border-style: solid;
-  border-color: #4d4d4d transparent transparent transparent;
-  border-width: 28px 12px;
+  content: " ";
+  top: 10px;
+  left: -16px;
+  color: #2e8b57;
 }
 .switch-btn .icon-ctn .birdhouse_holes {
   width: 12px;
