@@ -3,26 +3,6 @@
 
 
     
-  <url>
-    <loc>www.iwaity.com/2018/10/19/memories/</loc>
-    <lastmod>2018-10-19T12:52:18.813Z</lastmod>
-    <data>
-        <display>
-        <title>Memories</title>
-        <pubTime>2018-10-18T16:00:00.000Z</pubTime>
-        
-        <tag>情绪</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="www.iwaity.com/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
   <url>
@@ -195,9 +175,9 @@
         <title>Js中的HashMap</title>
         <pubTime>2017-11-23T16:00:00.000Z</pubTime>
         
-        <tag>JavaScript</tag>
-         
         <tag>HashMap</tag>
+         
+        <tag>JavaScript</tag>
          
          
            
